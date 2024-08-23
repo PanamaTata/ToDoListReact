@@ -1,13 +1,109 @@
 body {
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 7px #00a5af);
+
 }
+
+button {
+  margin: 20px;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+  button:active,
+  button:hover {
+    outline: 0;
+  }
+
+  button {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+
+  button:hover span {
+    background: none;
+  }
+
+  .button{
+width: 20%;
+  }
+  .div-button{
+    display: flex;
+    justify-content: space-around;
+  }
+  input {
+    width: 50%;
+    height: 30px;
+    background-color: rgb(152, 70, 243);
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 300ms;
+  }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Task {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  padding: 20px;
+  background-color: #00a5af;
+  border: 1px solid #244a3f;
+  width: 70%;
+  margin: 10px;
+}
+.task-left-part{
+  width: 10%;
+}
+.task-right-part{
+  padding: 10px;
+}
+.task-center-part{
+width: 80%;
+}
+
+.Completed {
+  background-color: #1e735d;
 }
